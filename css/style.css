@@ -1,0 +1,190 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*='col-']{
+  float: left;
+  border: 1px solid gray;
+}
+.row::after{
+  content: ' ';
+  clear: both;
+  display: block;
+}
+.container{
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+.header-top-height{height: 40px;}
+.header-height{height: 250px;}
+.menu-height{height: 50px;}
+.container-height{height: 650px;}
+.big-footer-height{height: 300px;}
+.footer-height{height: 40px;}
+
+@media screen and (max-width: 480px){
+  [class*='col-']{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 600px){
+  .col-s1{width: 8.33%;}
+  .col-s2{width: 16.66%;}
+  .col-s3{width: 25%;}
+  .col-s4{width: 33.33%;}
+  .col-s5{width: 41.66%;}
+  .col-s6{width: 50%;}
+  .col-s7{width: 58.33%;}
+  .col-s8{width: 66.66%;}
+  .col-s9{width: 75%;}
+  .col-s10{width: 83.33%;}
+  .col-s11{width: 91.66%;}
+  .col-s12{width: 100%;}
+
+  .test{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .row{
+    position: relative;
+  }
+  .visibility{display: none;}
+
+}
+@media screen and (min-width: 601px) and (max-width: 780px){
+  .col-m1{width: 8.33%;}
+  .col-m2{width: 16.66%;}
+  .col-m3{width: 25%;}
+  .col-m4{width: 33.33%;}
+  .col-m5{width: 41.66%;}
+  .col-m6{width: 50%;}
+  .col-m7{width: 58.33%;}
+  .col-m8{width: 66.66%;}
+  .col-m9{width: 75%;}
+  .col-m10{width: 83.33%;}
+  .col-m11{width: 91.66%;}
+  .col-m12{width: 100%;}
+  .test{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .row{
+    position: relative;
+  }
+}
+@media screen and (min-width: 781px) and (max-width: 900px){
+  .col-b1{width: 8.33%;}
+  .col-b2{width: 16.66%;}
+  .col-b3{width: 25%;}
+  .col-b4{width: 33.33%;}
+  .col-b5{width: 41.66%;}
+  .col-b6{width: 50%;}
+  .col-b7{width: 58.33%;}
+  .col-b8{width: 66.66%;}
+  .col-b9{width: 75%;}
+  .col-b10{width: 83.33%;}
+  .col-b11{width: 91.66%;}
+  .col-b12{width: 100%;}
+}
+.one{
+  height: 100px;
+  width: 150px;
+  float: left;
+  background: red;
+  border-radius: 10px 20px;
+  position: relative;
+  transform: rotateZ('0deg');
+  transition: 2s;
+}
+.one:hover{
+  transform: rotateZ(90deg);
+}
+.two{
+  height: 80px;
+  width: 100px;
+  background: green;
+  float: left;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  transform: rotateX(0deg);
+  transition: 2s;
+}
+.two:hover{
+  transform: rotateX(90deg);
+}
+.three{
+  height: 110px;
+  width: 160px;
+  background: linear-gradient(to left, red, green, blue);
+  float: left;
+  transform: rotateY(0deg);
+  transition: 2s;
+}
+.three:hover{
+  transform: rotateY(90deg);
+}
+.four{
+  height: 110px;
+  width: 160px;
+  background: linear-gradient( red, green, blue);
+  float: left;
+  transform: rotate(0deg) scale(1);
+  transition: 2s;
+}
+.four:hover{
+  transform: rotateY(360deg) scale(1.5);
+}
+.five{
+  height: 110px;
+  width: 160px;
+  background: linear-gradient( red, green);
+  float: left;
+  transform: skewY(30deg);
+  transition: 2s;
+}
+.five:hover{
+  transform: skewY(60deg);
+}
+
+.six{
+  height: 200px;
+  width: 20px;
+  background: red;
+  margin: 150px 100px 0px 150px;
+  transform: skew(-30deg);
+  float: left;
+}
+.seven{
+  height: 200px;
+  width: 20px;
+  background: red;
+  margin: 150px 10px 0px 0px;
+  transform: skew(30deg);
+  float: left;
+}
+.eight{
+  height: 20px;
+  width: 140px;
+  background: red;
+  margin-top: 250px;
+  margin-left: -150px;
+  float: left;
+}
